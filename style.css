@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(30, 30, 53);;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-weight: bold;
+  }
+  
+  #country-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .country-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .country-flag {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .country-name {
+    font-weight: bolder;
+  }
+  
+  .country-population {
+    color: #666;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media screen and (min-width: 576px) {
+    #country-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    #country-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    #country-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #country-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
