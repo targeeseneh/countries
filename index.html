@@ -3,10 +3,11 @@
 <head>
   <title>Country App</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <div id="app">
-    <h1>Country Glossary App</h1>
+    <h1>COUNTRY GLOSSARY APP</h1>
     <div class="filter-container">
       <label for="continent-select">Select Continent:</label>
       <select id="continent-select">
@@ -14,8 +15,10 @@
         <option value="europe">Europe</option>
         <option value="asia">Asia</option>
       </select>
+      <input type="text" id="search-input" placeholder="Find a country....">
     </div>
     <div id="country-grid"></div>
+    <div id="country-details"></div>
   </div>
 
   <script src="script.js"></script>
